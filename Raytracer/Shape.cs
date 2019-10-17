@@ -8,8 +8,8 @@ namespace Raytracer
     {
         public Vector3 Position;
         public Material Material;
-        public Matrix Transformation;
-        public Matrix Inverse;
+        public Transformation transformation;
+        public Transformation Inverse;
 
         public virtual Vector3 Normal(Vector3 pos)
         {

@@ -28,8 +28,6 @@ namespace Raytracer
                 [2, 1] = 2,
                 [2, 2] = 1,
             };
-            Console.WriteLine(Matrix.Determinante(test));
-            Console.WriteLine(Matrix.GetAdjugate(test));
         }
     }
 }

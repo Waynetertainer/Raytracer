@@ -10,7 +10,7 @@ namespace Raytracer
         public Plane(Vector3 normale, Vector3 position, Material material) : base(position*(-1), material)
         {
             Normale = normale;
-            //Transformation = new Matrix(4, 4)
+            //transformation = new Matrix(4, 4)
             //{
             //    [0, 0] = 1,
             //    [1, 1] = 1,
@@ -20,8 +20,8 @@ namespace Raytracer
             //    [3, 2] = position.z,
             //    [3, 3] = 1
             //};
-            //Console.WriteLine(Transformation);
-            //Inverse = Matrix.GetInverse(Transformation);
+            //Console.WriteLine(transformation);
+            //Inverse = Matrix.GetInverse(transformation);
             //Console.WriteLine(Inverse);
         }
 

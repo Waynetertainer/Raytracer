@@ -93,7 +93,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Joshua.Tobias\source\repos\Determinante_CS\Math\Determinante_CS\MyMath.csproj">
+    <ProjectReference Include="..\..\Math\Determinante_CS\MyMath.csproj">
       <Project>{7b20adf5-910c-467e-89db-a278353f515c}</Project>
       <Name>MyMath</Name>
     </ProjectReference>

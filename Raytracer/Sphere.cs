@@ -1,6 +1,5 @@
 ﻿using MyMath;
 using System;
-using System.Drawing;
 
 namespace Raytracer
 {
@@ -16,7 +15,7 @@ namespace Raytracer
         public Sphere(float radius, Vector3 position, Material material) : base(position, material)
         {
             Radius = radius;
-            Transformation = new Matrix(4, 4)
+            transformation = new Transformation()
             {
                 [0, 0] = Radius,
                 [1, 1] = Radius,
@@ -26,7 +25,7 @@ namespace Raytracer
                 [3, 2] = position.z,
                 [3, 3] = 1
             };
-            Inverse = Matrix.GetInverse(Transformation);
+            Inverse = new Transformation(Matrix.Inverse(transformation));
         }
 
         public override float IsHitByRay(Ray ray)
